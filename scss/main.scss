@@ -1,0 +1,39 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$container-large-desktop: 950px;
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+
+
+#clock {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 250px;
+  font-family: Inconsolata;
+  background-color: rgba(84, 96, 104, .5);
+
+}
+
+.hours {
+  &::after{
+    content: ":";
+    display: inline-block;
+    padding-left: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+.minutes {
+  &::after{
+    content: ":";
+    padding-left: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+// .seconds {
+//
+// }
