@@ -5816,17 +5816,19 @@ button.close {
   text-align: center;
   margin-top: 250px;
   font-family: Inconsolata;
-  background-color: rgba(84, 96, 104, 0.5); }
+  position: relative; }
 
 .hours::after {
   content: ":";
   display: inline-block;
-  padding-left: 50px;
-  margin-bottom: 10px; }
+  position: absolute;
+  padding-left: 4px;
+  margin-top: -10px; }
 
 .minutes::after {
   content: ":";
-  padding-left: 50px;
-  margin-bottom: 10px; }
+  position: absolute;
+  padding-left: 4px;
+  margin-top: -10px; }
 
 /*# sourceMappingURL=main.css.map */
