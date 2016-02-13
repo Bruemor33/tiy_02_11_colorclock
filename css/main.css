@@ -5816,7 +5816,8 @@ button.close {
   text-align: center;
   margin-top: 250px;
   font-family: Inconsolata;
-  position: relative; }
+  position: relative;
+  color: rgba(54, 45, 255, 0.2); }
 
 .hours::after {
   content: ":";

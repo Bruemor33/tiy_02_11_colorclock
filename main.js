@@ -226,10 +226,21 @@ console.log('hello world');
     }
   }
 
-  function hover(){
+  function hoverF(){
+    var mouseAction = '.hover';
+    var currentCol = new Date();
+    var secondsColor = currentCol.getSeconds();
+    document.getElementById('clock').addEventListener('mouseover', function(event){
+      console.log('happy days');
+    if (seconds <= 10){
+      seconds.textContent = '97';
+    }
+
+    });
 
   }
 
+  hoverF();
   setInterval(colorChanger, 1000);
   setInterval(startTime, 1000);
 }());
