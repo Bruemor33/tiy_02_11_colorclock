@@ -12,11 +12,17 @@ $container-large-desktop: 950px;
   font-size: 100px;
   text-align: center;
   margin-top: 250px;
-  font-family: Inconsolata;
+  font-family: "Passion One";
   position: relative;
-  color: rgba(54, 45, 255, .2);
+  color: rgba(186, 83, 34, .3);
   // background-color: rgba(84, 96, 104, .5);
 
+}
+
+.hours {
+  display: inline-block;
+  position: relative;
+  margin-right: 18px;
 }
 
 .hours {
@@ -25,8 +31,15 @@ $container-large-desktop: 950px;
     display: inline-block;
     position: absolute;
     padding-left: 4px;
+    padding-right: 4px;
     margin-top: -10px;
   }
+}
+
+.minutes{
+  display: inline-block;
+  position: relative;
+  margin-right: 18px;
 }
 
 .minutes {

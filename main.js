@@ -1,23 +1,22 @@
 
-console.log('hello world');
 
 (function(){
   'use strict';
 
 
-  var hours;
-  hours = document.querySelector('.hours');
-  var minutes;
-  minutes = document.querySelector('.minutes');
-  var seconds;
-  seconds = document.querySelector('.seconds');
 
+
+  setInterval(startTime, 1000);
 
   function startTime(){
     var today = new Date();
+    var hours = document.querySelector('.hours');
+    var minutes = document.querySelector('.minutes');
+    var seconds = document.querySelector('.seconds');
     var currentSec = today.getSeconds();
     var currentMin = today.getMinutes();
     var currentHor = today.getHours();
+
     // seconds.style.backgroundColor = 'red';
     seconds.textContent = today.getSeconds();
     minutes.textContent = today.getMinutes();
@@ -34,7 +33,11 @@ console.log('hello world');
     if (currentHor < 10) {
       hours.textContent = '0' + currentHor;
     }
+    console.log('hello world');
+
   }
+
+  setInterval(colorChanger, 1000);
 
   function colorChanger(){
     var currentCol = new Date();
@@ -224,23 +227,52 @@ console.log('hello world');
     if (secondsColor >= 60){
       background.style.backgroundColor = '#FFA18F';
     }
-  }
-
-  function hoverF(){
-    var mouseAction = '.hover';
+    var mouseAction = document.getElementById('clock');
     var currentCol = new Date();
     var secondsColor = currentCol.getSeconds();
-    document.getElementById('clock').addEventListener('mouseover', function(event){
+    document.getElementById('clock').addEventListener('mouseenter', function(event){
       console.log('happy days');
-    if (seconds <= 10){
-      seconds.textContent = '97';
-    }
+      mouseAction.textContent = '#FFA18F';
+    });
+    document.getElementById('clock').addEventListener('mouseleave', function(event){
+      mouseAction.innerHTML = '<section id="clock"><div class="row"><div class="col-xs-12"><span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span></div></div></section>';
+      var today = new Date();
+      var seconds = document.querySelector('.seconds');
+      var minutes = document.querySelector('.minutes');
+      var hours = document.querySelector('.hours');
+      // seconds.style.backgroundColor = 'red';
+      seconds.textContent = today.getSeconds();
+      minutes.textContent = today.getMinutes();
+      hours.textContent = today.getHours();
 
     });
 
+
+
   }
 
-  hoverF();
-  setInterval(colorChanger, 1000);
-  setInterval(startTime, 1000);
+  // function hoverF(){
+  //   var mouseAction = document.querySelector('.hover');
+  //   var currentCol = new Date();
+  //   var secondsColor = currentCol.getSeconds();
+  //   document.getElementById('clock').addEventListener('mouseenter', function(event){
+  //     console.log('happy days');
+  //     mouseAction.textContent = '#FFA18F';
+  //   document.getElementById('clock').addEventListener('mouseleave', function(event){
+  //     mouseAction.innerHTML = '<span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span>';
+  //     var today = new Date();
+  //     var seconds = document.querySelector('.seconds');
+  //     var minutes = document.querySelector('.minutes');
+  //     var hours = document.querySelector('.hours');
+  //     // seconds.style.backgroundColor = 'red';
+  //     seconds.textContent = today.getSeconds();
+  //     minutes.textContent = today.getMinutes();
+  //     hours.textContent = today.getHours();
+  //
+  //   });
+  //
+  //   });
+  //
+  // }
+
 }());
