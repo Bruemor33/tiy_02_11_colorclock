@@ -235,44 +235,20 @@
       mouseAction.textContent = '#FFA18F';
     });
     document.getElementById('clock').addEventListener('mouseleave', function(event){
-      mouseAction.innerHTML = '<section id="clock"><div class="row"><div class="col-xs-12"><span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span></div></div></section>';
-      var today = new Date();
-      var seconds = document.querySelector('.seconds');
-      var minutes = document.querySelector('.minutes');
-      var hours = document.querySelector('.hours');
-      // seconds.style.backgroundColor = 'red';
-      seconds.textContent = today.getSeconds();
-      minutes.textContent = today.getMinutes();
-      hours.textContent = today.getHours();
+     mouseAction.innerHTML = '<section id="clock"><div class="row"><div class="col-xs-12"><span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span></div></div></section>';
+     var today = new Date();
+     var seconds = document.querySelector('.seconds');
+     var minutes = document.querySelector('.minutes');
+     var hours = document.querySelector('.hours');
+     // seconds.style.backgroundColor = 'red';
+     seconds.textContent = today.getSeconds();
+     minutes.textContent = today.getMinutes();
+     hours.textContent = today.getHours();
 
-    });
+   });
 
 
 
   }
-
-  // function hoverF(){
-  //   var mouseAction = document.querySelector('.hover');
-  //   var currentCol = new Date();
-  //   var secondsColor = currentCol.getSeconds();
-  //   document.getElementById('clock').addEventListener('mouseenter', function(event){
-  //     console.log('happy days');
-  //     mouseAction.textContent = '#FFA18F';
-  //   document.getElementById('clock').addEventListener('mouseleave', function(event){
-  //     mouseAction.innerHTML = '<span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span>';
-  //     var today = new Date();
-  //     var seconds = document.querySelector('.seconds');
-  //     var minutes = document.querySelector('.minutes');
-  //     var hours = document.querySelector('.hours');
-  //     // seconds.style.backgroundColor = 'red';
-  //     seconds.textContent = today.getSeconds();
-  //     minutes.textContent = today.getMinutes();
-  //     hours.textContent = today.getHours();
-  //
-  //   });
-  //
-  //   });
-  //
-  // }
 
 }());
