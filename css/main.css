@@ -5817,30 +5817,14 @@ button.close {
   margin-top: 250px;
   font-family: "Passion One";
   position: relative;
-  color: rgba(186, 83, 34, 0.3); }
+  color: rgba(27, 51, 255, 0.2); }
 
 .hours {
   display: inline-block;
-  position: relative;
-  margin-right: 18px; }
-
-.hours::after {
-  content: ":";
-  display: inline-block;
-  position: absolute;
-  padding-left: 4px;
-  padding-right: 4px;
-  margin-top: -10px; }
+  position: relative; }
 
 .minutes {
   display: inline-block;
-  position: relative;
-  margin-right: 18px; }
-
-.minutes::after {
-  content: ":";
-  position: absolute;
-  padding-left: 4px;
-  margin-top: -10px; }
+  position: relative; }
 
 /*# sourceMappingURL=main.css.map */

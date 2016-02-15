@@ -235,7 +235,7 @@
       mouseAction.textContent = '#FFA18F';
     });
     document.getElementById('clock').addEventListener('mouseleave', function(event){
-     mouseAction.innerHTML = '<section id="clock"><div class="row"><div class="col-xs-12"><span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span></div></div></section>';
+     mouseAction.innerHTML = '<section id="clock"><div class="row"><div class="col-xs-12"><span class="hours">00</span><span>:</span><span class="minutes">00</span><span>:</span><span class="seconds">00</span></div></div></section>';
      var today = new Date();
      var seconds = document.querySelector('.seconds');
      var minutes = document.querySelector('.minutes');
@@ -246,8 +246,6 @@
      hours.textContent = today.getHours();
 
    });
-
-
 
   }
 

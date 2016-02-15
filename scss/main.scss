@@ -14,7 +14,7 @@ $container-large-desktop: 950px;
   margin-top: 250px;
   font-family: "Passion One";
   position: relative;
-  color: rgba(186, 83, 34, .3);
+  color: rgba(27, 51, 255, .2);
   // background-color: rgba(84, 96, 104, .5);
 
 }
@@ -22,34 +22,34 @@ $container-large-desktop: 950px;
 .hours {
   display: inline-block;
   position: relative;
-  margin-right: 18px;
+  // margin-right: 18px;
 }
 
-.hours {
-  &::after{
-    content: ":";
-    display: inline-block;
-    position: absolute;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-top: -10px;
-  }
-}
+// .hours {
+//   &::after{
+//     content: ":";
+//     display: inline-block;
+//     position: absolute;
+//     padding-left: 4px;
+//     padding-right: 4px;
+//     margin-top: -10px;
+//   }
+// }
 
 .minutes{
   display: inline-block;
   position: relative;
-  margin-right: 18px;
+  // margin-right: 18px;
 }
 
-.minutes {
-  &::after{
-    content: ":";
-    position: absolute;
-    padding-left: 4px;
-    margin-top: -10px;
-  }
-}
+// .minutes {
+//   &::after{
+//     content: ":";
+//     position: absolute;
+//     padding-left: 4px;
+//     margin-top: -10px;
+//   }
+// }
 
 // .seconds {
 //
